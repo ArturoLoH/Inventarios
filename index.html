@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Inventory System</h1>
+  </header>
+  <main>
+    <section class="add-item">
+        <h2>Add or Remove Items</h2>
+        <form>
+          <label for="action">Action:</label>
+          <select id="action" name="action">
+            <option value="add">Add</option>
+            <option value="remove">Remove</option>
+          </select>
+      
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+      
+          <label for="code">Code:</label>
+          <input type="text" id="code" name="code" required>
+      
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      
+    </section>
+    <section class="inventory">
+        <h2>Inventory</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Responsable</th>
+              <th>Tarea</th>
+              <th>Horas</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Inventory items will be added here -->
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
